@@ -1,5 +1,6 @@
 body{
-  background-color: #f0f1f6!important;
+  /*background-color: #f0f1f6!important;*/
+  background-image: url("../images/wallpaper1.jpg")!important;
 }
 
 .margin-30{
@@ -7,7 +8,7 @@ body{
 }
 
 .gameArea{
-  min-height:450px;
+  min-height:500px;
   position: relative;
 }
 
@@ -19,7 +20,7 @@ body{
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 14px;
   font-weight: 700;
   margin: 0 auto 40px;
@@ -50,18 +51,23 @@ body{
   top: -22px;
   line-height: 14px;
   color: #333;
-  background-color: #f1f1f1;
+  background-color: white;
   padding: 3px 5px;
   left: 0;
   width: 100%;
-  display: inline-block;
+/*--------------------------------------*/
+  display: none;
+/*--------------------------------------*/
+
 }
 
 .chat{
   margin-right: 10px!important;
   margin-left: 10px!important;
-  height: 90px;
-  -webkit-mask-image: -webkit-gradient(linear, left 60%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+  height: 170px;
+  overflow-y: auto;
+  background: rgba(171, 205, 239, 0.3);
+  border-radius: 10px;
 
 }
 .chat .content{
@@ -75,4 +81,11 @@ body{
 }
 .chat .item{
   margin:.3em 0!important;
+}
+.ui.stacked.segment.gameArea{
+  background: rgba(171, 205, 239, 0.3);
+  border-radius: 30px;
+}
+.ui.action.input:not([class*="left action"]) > input{
+  background: rgba(0, 205, 239, 0.4);
 }
